@@ -3,47 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient Financing - Himalayan Healthcare</title>
+  <title>Easy EMI Options for Patients - Himalayan Healthcare</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- Header with Logo Only -->
-  <header class="bg-white shadow-md">
-    <div class="container mx-auto flex items-center justify-start py-4 px-6">
-      <img src="images/logo1.png" alt="Himalayan Healthcare Logo" class="h-12 w-auto">
+  <!-- Header -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo1.png" alt="Himalayan Healthcare Logo" class="h-12 w-auto">
+      </a>
+      <nav class="hidden md:flex gap-6 text-gray-700 font-semibold">
+        <a href="index.html" class="hover:text-yellow-500">Home</a>
+        <a href="index.html#healthcare-service" class="hover:text-yellow-500">Our Healthcare Services</a>
+        <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Page Title -->
-  <section class="bg-yellow-50 py-12">
-    <div class="container mx-auto text-center">
-      <h1 class="text-4xl font-bold text-yellow-800">Patient Financing</h1>
-      <p class="mt-4 text-lg text-gray-700">EMI options to make healthcare affordable and stress-free.</p>
-    </div>
-  </section>
+  <!-- Hero Section -->
+  <section class="relative h-[75vh] flex items-center justify-center text-center">
+    <!-- Background Image -->
+    <img src="images/financing.jpg" alt="Easy EMI Options for Patients" class="absolute inset-0 w-full h-full object-cover">
 
-  <!-- Financing Service Card (Centered) -->
-  <section class="container mx-auto py-16 px-6">
-    <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition duration-300 max-w-xl mx-auto">
-      <h2 class="text-2xl font-semibold text-yellow-800 mb-4">EMI Options for Treatment</h2>
-      <p class="text-gray-700">
-        We believe financial limitations should never prevent access to quality healthcare. Our financing solutions allow patients to convert medical bills into easy monthly installments (EMIs). By reducing the immediate financial burden, families can focus on recovery rather than costs, while hospitals benefit from smoother payment cycles and improved patient trust.
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-white animate-fadeInUp">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Easy <span class="text-yellow-400">EMI Options</span> for Patients
+      </h1>
+      <p class="text-lg md:text-xl mb-8 leading-relaxed">
+        Making quality healthcare <span class="text-yellow-400 font-semibold">affordable</span> through 
+        <span class="text-yellow-400 font-semibold">flexible financing plans</span> with zero-cost EMI and quick approvals.
       </p>
+      <a href="#core-services" 
+         class="inline-block bg-yellow-400 text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-300 transition">
+        Explore EMI Options
+      </a>
     </div>
   </section>
 
-  <!-- Back to Healthcare Services Button -->
-  <div class="container mx-auto text-center py-8">
-    <a href="index.html#healthcare-service" 
-       class="inline-block bg-yellow-300 text-gray-900 font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition-colors duration-300">
-      MORE SERVICES
+  <!-- Animation -->
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+  </style>
+
+  <!-- Core Services Section -->
+  <section class="py-20" id="core-services">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+        Our EMI Support Includes
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Flexible Payment Options</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>Zero-cost EMI and low-interest financing</li>
+            <li>Custom repayment plans for patients</li>
+            <li>Easy monthly installments</li>
+            <li>Quick approval process</li>
+          </ul>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Wide Coverage</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>Applicable for surgeries & critical treatments</li>
+            <li>Coverage for diagnostic procedures</li>
+            <li>Emergency care financing support</li>
+            <li>Applicable in multiple hospitals</li>
+          </ul>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Why Choose EMI Support?</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>Patients get immediate treatment without delays</li>
+            <li>Relieves families from sudden financial burden</li>
+            <li>Boosts patient satisfaction & trust in hospitals</li>
+            <li>Ensures smooth cash flow for hospitals</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-yellow-300 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Need EMI Support for Your Hospital?</h2>
+    <p class="text-gray-800 mb-6">Contact us today to enable easy EMI financing options for your patients.</p>
+    <a href="contact.html" class="inline-block bg-gray-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-800 transition">
+      Get in Touch
     </a>
-  </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-white border-t mt-12">
-    <div class="container mx-auto py-6 px-6 text-center text-gray-500">
-      &copy; 2025 Himalayan Healthcare. All rights reserved.
-    </div>
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 Himalayan Healthcare. All Rights Reserved.</p>
   </footer>
+
+</body>
+</html>

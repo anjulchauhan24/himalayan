@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NABH Consultancy Services - Himalayan Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo1.png" alt="Himalayan Healthcare Logo" class="h-12 w-auto">
+      </a>
+      <nav class="hidden md:flex gap-6 text-gray-700 font-semibold">
+        <a href="index.html" class="hover:text-yellow-500">Home</a>
+        <a href="index.html#healthcare-service" class="hover:text-yellow-500">Our Healthcare Services</a>
+        <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Background Image -->
+  <section class="relative h-[75vh] flex items-center justify-center text-center">
+    <!-- Background Image -->
+    <img src="images/Consultancy.jpeg" alt="NABH Consultancy Services" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/80"></div>
+
+    <!-- Content -->
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-white animate-fadeInUp">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        NABH <span class="text-green-400">Consultancy Services</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-8 leading-relaxed">
+        End-to-end support for <span class="text-green-400 font-semibold">NABH Accreditation</span> – helping hospitals achieve the 
+        <span class="text-green-400 font-semibold">highest standards of quality</span> and patient safety.
+      </p>
+      <a href="#nabh-services" 
+         class="inline-block bg-green-400 text-gray-900 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-green-300 transition">
+        Explore NABH Services
+      </a>
+    </div>
+  </section>
+
+  <!-- Animation -->
+  <style>
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 1s ease forwards;
+    }
+  </style>
+
+
+  <!-- NABH Services Section -->
+  <section class="py-20" id="nabh-services">
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+        Our NABH Services
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Service 1 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Gap Analysis & Assessment</h3>
+          <p class="text-gray-600">Identify compliance gaps with NABH standards to prepare your hospital for accreditation.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Documentation Support</h3>
+          <p class="text-gray-600">Preparation of manuals, SOPs, policies, and mandatory records required for NABH.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Staff Training</h3>
+          <p class="text-gray-600">Comprehensive training sessions for doctors, nurses, and support staff on NABH standards.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Implementation Support</h3>
+          <p class="text-gray-600">Hands-on assistance in implementing quality and patient safety standards in operations.</p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Mock Audits</h3>
+          <p class="text-gray-600">Pre-assessment audits to identify gaps and prepare for the NABH final inspection.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
+          <h3 class="text-xl font-bold mb-3">✅ Accreditation Process Guidance</h3>
+          <p class="text-gray-600">Complete guidance from application submission to final NABH certification.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="py-20 bg-gray-100">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">Benefits for Hospitals</h2>
+      <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700 text-lg">
+        <li>✔ Improves patient safety & quality of care</li>
+        <li>✔ Enhances hospital reputation & trust</li>
+        <li>✔ Mandatory for many TPA & insurance empanelments</li>
+        <li>✔ Competitive advantage in healthcare industry</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-green-500 text-center text-white">
+    <h2 class="text-3xl font-bold mb-4">Ready for NABH Accreditation?</h2>
+    <p class="mb-6">Get expert consultancy to achieve the highest standards of hospital accreditation.</p>
+    <a href="contact.html" class="inline-block bg-white text-green-600 font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition">
+      Contact Us
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+    <p>&copy; 2025 Himalayan Healthcare. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
