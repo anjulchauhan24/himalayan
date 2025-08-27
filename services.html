@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - Himalayan Healthcare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header / Navbar -->
+  <header x-data="{ open: false }" class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Himalayan Healthcare Logo" class="w-14 h-auto">
+      </a>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-8 text-gray-700 font-medium">
+        <a href="index.html" class="hover:text-teal-600">Home</a>
+        <a href="about.html" class="hover:text-teal-600">About</a>
+        <a href="services.html" class="text-teal-600 border-b-2 border-teal-600">Services</a>
+        <a href="contact.html" class="hover:text-teal-600">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button @click="open = !open" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path :class="{'hidden': open, 'block': !open}" class="block" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+          <path :class="{'block': open, 'hidden': !open}" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div x-show="open" class="md:hidden bg-gray-100">
+      <a href="index.html" class="block px-6 py-2 hover:bg-teal-100">Home</a>
+      <a href="about.html" class="block px-6 py-2 hover:bg-teal-100">About</a>
+      <a href="services.html" class="block px-6 py-2 bg-teal-200">Services</a>
+      <a href="contact.html" class="block px-6 py-2 hover:bg-teal-100">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-teal-500 to-cyan-600 text-white py-20">
+    <div class="max-w-7xl mx-auto text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Healthcare Services</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Comprehensive healthcare solutions designed to meet your needs with compassion, expertise, and care.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service1.jpg" alt="General Healthcare" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">General Healthcare</h3>
+          <p class="text-gray-600">Primary healthcare and preventive services for individuals and families.</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service2.jpg" alt="Specialist Consultation" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Specialist Consultation</h3>
+          <p class="text-gray-600">Expert consultations across multiple specialties for precise diagnosis and care.</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service3.jpg" alt="Diagnostic Services" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Diagnostic Services</h3>
+          <p class="text-gray-600">State-of-the-art labs and imaging facilities for accurate diagnostics.</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service4.jpg" alt="Emergency Care" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Emergency Care</h3>
+          <p class="text-gray-600">24/7 emergency response with skilled professionals ready to assist anytime.</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service5.jpg" alt="Pharmacy & Medication" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Pharmacy & Medication</h3>
+          <p class="text-gray-600">Quality medicines and pharmacy support at affordable prices.</p>
+        </div>
+
+        <!-- Service Card -->
+        <div class="bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition">
+          <img src="images/service6.jpg" alt="Wellness Programs" class="w-full h-48 object-cover rounded-xl mb-6">
+          <h3 class="text-xl font-semibold mb-3 text-gray-800">Wellness Programs</h3>
+          <p class="text-gray-600">Personalized wellness and lifestyle programs for long-term health.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-teal-600 text-white py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4">Need Healthcare Assistance?</h2>
+    <p class="max-w-2xl mx-auto mb-6">Our team is here to support you with quality care and dedicated services tailored to your needs.</p>
+    <a href="contact.html" class="bg-white text-teal-600 font-semibold px-6 py-3 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition">
+      Get in Touch
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p>&copy; 2025 Himalayan Healthcare. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
